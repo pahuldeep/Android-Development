@@ -1,2 +1,2 @@
 # Android-Development
-different activities
+various functions and recipes used in android 
