@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>authUser</class>
+ <widget class="QMainWindow" name="authUser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sign In</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(30, 30, 30)</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <spacer name="verticalSpacerTop">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="labelTitle">
+      <property name="styleSheet">
+       <string>font-size: 24px; color: #FFFFFF; font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Sign In</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelUsername">
+      <property name="styleSheet">
+       <string>color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Username:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditUsername">
+      <property name="styleSheet">
+       <string>background-color: #2E2E2E; color: #FFFFFF; border: 1px solid #444444; border-radius: 5px; padding: 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your username</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelPassword">
+      <property name="styleSheet">
+       <string>color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Password:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditPassword">
+      <property name="styleSheet">
+       <string>background-color: #2E2E2E; color: #FFFFFF; border: 1px solid #444444; border-radius: 5px; padding: 10px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your password</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacerBottom">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonSignIn">
+      <property name="styleSheet">
+       <string>background-color: #4CAF50; color: #FFFFFF; border: none; border-radius: 5px; padding: 10px; font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>Sign In</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacerRegister">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonRegister">
+      <property name="styleSheet">
+       <string>background-color: #007BFF; color: #FFFFFF; border: none; border-radius: 5px; padding: 10px; font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacerBottomFinal">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
