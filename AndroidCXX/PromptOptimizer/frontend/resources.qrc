@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>pages/BasicPage.qml</file>
+        <file>pages/AdvancedPage.qml</file>
+        <file>pages/SettingsPage.qml</file>
+        <file>components/AgentCard.qml</file>
+        <file>components/BottomNav.qml</file>
+        <file>components/TechniqueRow.qml</file>
+        <file>components/ActionButtons.qml</file>
+        <file>components/ToggleSwitch.qml</file>
+        <file>components/CheckOption.qml</file>
+        <file>components/FocusOption.qml</file>
+        <file>models/AgentModel.qml</file>
+        <file>models/TechniqueModel.qml</file>
+        <file>models/PromptModel.qml</file>
+        <file>styles/Colors.qml</file>
+        <file>styles/Typography.qml</file>
+        <file>styles/Layouts.qml</file>
+    </qresource>
+</RCC>
