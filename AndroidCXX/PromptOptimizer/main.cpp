@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 
     // Load the main QML file
     const QUrl url(QStringLiteral("qrc:/main.qml"));
+    qDebug() << url;
 
     // const QUrl url(QUrl::fromLocalFile(QCoreApplication::applicationDirPath() + "/../frontend/main.qml"));
 

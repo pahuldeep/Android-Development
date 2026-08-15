@@ -60,7 +60,7 @@ ApplicationWindow {
 
             Layout.preferredHeight: 146
 
-            currentIndex: 0
+            currentIndex: 1
         }
     }
 }

@@ -25,7 +25,7 @@ qt_add_qml_module(frontend_app
         styles/Layouts.qml
     RESOURCES
         utils/Helpers.js
-        resources.qrc
+        # resources.qrc
     # OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/PromptOptimizer
 )
 

@@ -9,9 +9,24 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Find Qt6 required packages
-find_package(Qt6 REQUIRED COMPONENTS Quick Gui Qml)
+find_package(Qt6 REQUIRED COMPONENTS Quick Gui)
 
 qt_standard_project_setup()
 
 add_subdirectory(frontend)
 add_subdirectory(backend)
+
+qt_add_executable(prompt-app
+    main.cpp
+)
+
+target_link_libraries(prompt-app PRIVATE
+    Qt6::Core
+    Qt6::Quick
+    # Qt6::Qml
+)
+
+target_sources(prompt-app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/frontend/resources.qrc)
+
+# Set QML import path for the executable
+set_target_properties(prompt-app PROPERTIES QT_QML_IMPORT_PATH "${CMAKE_BINARY_DIR}/frontend")
